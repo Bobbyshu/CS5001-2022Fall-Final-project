@@ -1,0 +1,21 @@
+For the final project, I started with finishing the input user interface which used to register the
+username and maximum available steps. Searching from turtle docs.
+
+Finishing the first part, I created 3 frame at first and store their position into another file
+because I think it's inappropriate to put them as static final variable in the head of my main class
+
+For the 3 frame, my first part is leaderboard, I check the image in canvas and a command line is
+LOCATION: Game.read_leaderboard_file(), so I know that I can design a function to read file and
+rewrite the file of leaderboard. Finally, I use a new pen to render the content of file into the
+leaderboard.
+
+My second part is designing the tile of the main frame, I designed a list to store the position of
+each tile and everytime I changed the tile I will check the final status (whether it's same as the
+original coordinate Or the cur_step has exceeded the maximum step inputted at first). For the rendering,
+I choose to make sure the coordinate of left upper tile and test the interval for them to put, then
+I use for loop to traverse the coordinate and put them into list to render.
+
+The last part is designing 3 button and binding them with function. For the load, that's same as
+initializing and I imported os to scan the file with .puz suffix and show them for user. For the
+reset, I just need to render the picture by original position. For the quit, I just need to show
+the finish picture for the user.
